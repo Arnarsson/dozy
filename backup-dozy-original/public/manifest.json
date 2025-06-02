@@ -1,0 +1,21 @@
+{
+  "name": "DOZY - AI Sleep Coaching",
+  "short_name": "DOZY",
+  "description": "AI-powered sleep coaching for parents on Apple Watch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/placeholder.svg?height=192&width=192&text=DOZY",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/placeholder.svg?height=512&width=512&text=DOZY",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
