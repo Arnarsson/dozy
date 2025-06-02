@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, Moon, Star, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { AppleWatchDemo } from "@/components/ui/apple-watch-demo"
+import { EnhancedAppleWatchDemo } from "@/components/ui/enhanced-apple-watch-demo"
 import { MorphingGradient } from "@/components/ui/morphing-gradient"
 
 export function Hero() {
@@ -196,7 +196,7 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Side - Interactive Apple Watch Demo */}
+          {/* Right Side - Enhanced Interactive Apple Watch Demo */}
           <motion.div 
             className="flex justify-center lg:justify-end"
             initial={{ opacity: 0, x: 100 }}
@@ -204,7 +204,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <div className="relative">
-              <AppleWatchDemo />
+              <EnhancedAppleWatchDemo />
               
               {/* Floating Elements around Watch */}
               <motion.div
@@ -252,6 +252,16 @@ export function Hero() {
                 }}
               >
                 💤
+              </motion.div>
+
+              {/* "Try It" Call-to-action */}
+              <motion.div
+                className="absolute -top-16 left-1/2 -translate-x-1/2 bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm border border-blue-500/30"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 2, duration: 0.5 }}
+              >
+                👆 Try the interactive demo!
               </motion.div>
             </div>
           </motion.div>
